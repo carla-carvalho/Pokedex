@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="./img/pokedex.png"/>
     <title>Detalhes da Pokedéx</title>
 </head>
 
@@ -32,35 +33,24 @@
     <section id="details">
         <img src="<%= pokemon.imagem %>" alt="">
         <div id="infos">
-            <p>
-                <%= pokemon.descricao %>
+            <p id="descricao">
+                <%= pokemon.descricao %>    
             </p>
+            <br>
             <div id="info-datail">
-                <div class='col'>
-                    <h4>Altura:</h4>
-                    <h3>
-                        <%= pokemon.altura %>
-                    </h3>
-                    <h4>Peso:</h4>
-                    <h3>
-                        <%= pokemon.peso %>
-                    </h3>
-                </div>
-                <div class='col'>
-                    <h4>Categoria:</h4>
-                    <h3>
-                        <%= pokemon.categoria %>
-                    </h3>
-                    <h4>Habilidade:</h4>
-                    <h3>
-                        <%= pokemon.habilidade %>
-                    </h3>
+                <div class='col' id="primeiraColuna">
+                    <h4>Altura: <%= pokemon.altura %></h4>
+                
+                    <h4>Peso: <%= pokemon.peso %></h4>
+                
+                    <h4>Categoria: <%= pokemon.categoria %></h4>
+                   
+                    <h4>Habilidade: <%= pokemon.habilidade %></h4>
+
+                    <h4>Tipo: <%= pokemon.tipo %></h4>
                 </div>
             </div>
-            <h3>Tipo:</h3>
-            <h2>
-                <%= pokemon.tipo %>
-            </h2>
+            <br>
         </div>
 
 

@@ -66,7 +66,7 @@ nav article img {
 
 header {
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +78,7 @@ header h1 {
   font-size: 4rem;
   text-shadow: 0 0 1rem #00000060;
   text-align: center;
-  margin-right: 2rem;
+
 
 }
 
@@ -131,11 +131,31 @@ section#cadastrar {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #fff;
-  margin: 0 20rem 10rem 20rem;
+  margin: 0 20% 10% 20%;
   box-shadow: 0 0 1rem #00000060;
   border-radius: 1rem;
+
+  
 }
 
+
+  header h1 {
+    
+    font-size: 3rem;
+    text-shadow: 0 0 1rem #00000060;
+    text-align: center;
+    margin-right: 5rem;
+    margin-left: 5%;
+  
+  }
+
+  header figure {
+    
+  
+    margin-right: 10%;
+  
+  }
+}
 
 section#cadastrar h2 {
   color: rgb(12, 6, 6);
@@ -143,6 +163,7 @@ section#cadastrar h2 {
   padding-bottom: 2rem;
   font-size: 2.5rem;
   width: 100%;
+
 }
 
 section#cadastrar form {
@@ -178,7 +199,7 @@ section#cadastrar form button {
   margin-top: 2rem;
   cursor: pointer;
   transition: 0.3s ease-out;
-  width: 40%;
+  width: 50%;
 }
 
 section#cadastrar form button:hover {
@@ -218,48 +239,78 @@ span#close:hover {
 }
 
 section#details {
-  margin: 0 15rem 0 15rem;
+  margin: 0 25% 0 27%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   border-radius: 2rem;
   padding: 3rem;
+  padding-left: 4px;
   box-shadow: 0 0 1rem #00000060;
+  max-width: 40%;
 }
+
+#details img {
+  width: 20rem; 
+}
+
 
 section#details div#infos p {
   font-size: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+
+  flex-wrap: wrap;
 }
 
 section#details div#infos div#info-datail {
   background-color: #ccc;
   display: flex;
-  justify-content: space-around;
+  
   align-items: center;
-  padding: 2rem;
-  width: 60%;
+  padding: 1rem;
+  padding-left: 1rem;
+  width: 100%;
   border-radius: 1rem;
 }
 
-section#details div#infos div#info-datail h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 0.5rem 0 1rem 0;
-}
-
-section#details div#infos h3 {
-  padding-top: 3rem;
-  font-size: 2rem;
-}
 
 section#details div#infos h2 {
   background-color: rgb(68, 211, 255);
   padding: 1rem;
   color: #fff;
   border-radius: 1rem;
-  width: 50%;
+  width: 30%;
   text-align: center;
   margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  
+  section#cadastrar {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 5% 5% 5%;
+  box-shadow: 0 0 1rem #00000060;
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 60%;
+
+  }
+
+  
+section#details {
+  margin: 0 10% 10% 20%;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color:#FFF;
+  border-radius: 2rem;
+  padding: 0% 40% 0% 40%;
+  box-shadow: 0 0 1rem #00000060;
+  margin-left: 15%;
+}
 }
